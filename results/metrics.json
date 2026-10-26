@@ -1,0 +1,38 @@
+{
+  "model": "logistic_regression",
+  "version": "1.0.0",
+  "trained_at": "2026-10-26T18:24:10+00:00",
+  "features": [
+    "pregnancies",
+    "glucose",
+    "blood_pressure",
+    "skin_thickness",
+    "insulin",
+    "bmi",
+    "diabetes_pedigree",
+    "age"
+  ],
+  "train_size": 614,
+  "test_size": 154,
+  "cross_validation": {
+    "logistic_regression": {
+      "roc_auc_mean": 0.8444,
+      "roc_auc_std": 0.0161
+    },
+    "random_forest": {
+      "roc_auc_mean": 0.8323,
+      "roc_auc_std": 0.0243
+    },
+    "gradient_boosting": {
+      "roc_auc_mean": 0.8253,
+      "roc_auc_std": 0.0158
+    }
+  },
+  "test": {
+    "roc_auc": 0.8126,
+    "accuracy": 0.7338,
+    "precision": 0.6032,
+    "recall": 0.7037,
+    "f1": 0.6496
+  }
+}
